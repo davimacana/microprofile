@@ -25,6 +25,8 @@ Microprofile é um projeto open-source que conta com 13 especificações em seu 
 ex.: BusinessExceptionsMapper, assim, sempre que a exceção é lançada a mesma será capturada e através do mapeamento e será instanciado um
 dto para retornar os dados do response, de forma padronizada.
 
+Para exceções não tratadas, será retornado um código de erro no retorno da api e no arquivo de log para facilitar buscas.
+
 #### Api Restfull
 - Os recursos da aplicação estão localizados no pacote com.microprofile.resource, criados utilizando a especificação jaxrs
 
@@ -37,3 +39,6 @@ dto para retornar os dados do response, de forma padronizada.
 #### Log
 - Padrão POA (Programação orientada a aspectos) para registro de log. Todas as classes ou métodos que serão interceptados para registro de log devem ser anotadas com a anotação @Logger
 - Log4j2 configurado para escrever o log em local centralizado, externa a aplicação
+
+
+### 
